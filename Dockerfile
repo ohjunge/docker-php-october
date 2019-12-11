@@ -51,6 +51,6 @@ RUN docker-php-ext-enable apcu
 RUN pecl install xdebug
 
 # set up php.ini
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 # change memory limit to 512M
 RUN sed -i 's/memory_limit = .*/memory_limit = 512M/' "$PHP_INI_DIR/php.ini"
