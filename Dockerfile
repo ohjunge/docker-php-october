@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -yq \
         libpng-dev \
         libssl-dev \
         libxml2-dev \
-        mysql-client \
+        default-mysql-client \
         libmcrypt-dev \
         wget \
         zlib1g-dev \
